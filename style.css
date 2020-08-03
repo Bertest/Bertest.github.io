@@ -30,7 +30,7 @@ img {
 }
 
 p {
-    color: white;
+    color: black;
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -209,6 +209,7 @@ p {
 
 #services .service-item p {
     text-align: left;
+    color: white;
 }
 
 /*END Works section */
