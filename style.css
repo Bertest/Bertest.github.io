@@ -40,7 +40,7 @@ p {
 
 /* Hero Section */
 #hero {
-    background-image: url(./img/3.jpg);
+    background-image: url(./img/3v1.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -62,7 +62,7 @@ p {
 #hero .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 20px;
     justify-content: flex-start;
 }
 
