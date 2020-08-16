@@ -38,6 +38,26 @@ p {
     letter-spacing: 0.05rem;
 }
 
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(223, 11, 11);
+    background-color: transparent;
+    border: 2px solid rgb(223, 11, 11);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    animation-delay: 1s;
+}
+
+.cta:hover {
+    color: white;
+    background-color: rgb(223, 11, 11);
+}
+
 /* Hero Section */
 #hero {
     background-image: url(./img/3v1.jpg);
@@ -109,25 +129,6 @@ p {
     animation-delay: 0.3s;
 }
 
-#hero .cta {
-    display: inline-block;
-    padding: 10px 30px;
-    color: rgb(223, 11, 11);
-    background-color: transparent;
-    border: 2px solid rgb(223, 11, 11);
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 30px;
-    transition: 0.3s ease;
-    transition-property: background-color, color;
-    animation-delay: 1s;
-}
-
-#hero .cta:hover {
-    color: white;
-    background-color: rgb(223, 11, 11);
-}
 /*End Hero Section */
 
 /* Works section */
@@ -290,8 +291,8 @@ p {
     transition: 0.7s ease;
 }
 
-#projects .project-img img{
-    transition: .3s ease transform;
+#projects .project-img img {
+    transition: 0.3s ease transform;
 }
 
 #projects .project-item:hover .project-img img {
@@ -299,8 +300,62 @@ p {
 }
 #projects .project-item:hover .project-img:after {
     opacity: 0.1;
-
+}
 /* END Project Section */
+
+/* About section */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p {
+    margin-bottom: 20px;
+}
+
+#about .col-right .cta {
+    color: #29323c;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+#about .col-left .about-img {
+    position: relative;
+    border: 10px solid white;
+    height: 100%;
+    width: 100%;
+}
+#about .col-left .about-img::after {
+    content: '';
+    position: absolute;
+    left: -35px;
+    top: 19px;
+    height: 98%;
+    border: 7px;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+/* END About section */
 
 /* Keyframes */
 
