@@ -395,10 +395,12 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1rem;
 }
 
 #projects .project-item {
     display: flex;
+    gap: 0.4rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -418,6 +420,7 @@ p {
     flex-direction: column;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
+    border-radius: 10px;
 }
 
 #projects .project-info h1 {
@@ -440,6 +443,7 @@ p {
     height: 100%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 }
 #projects .project-img:after {
     content: '';
@@ -778,6 +782,14 @@ p {
 
 /* Media Query for DESKTOP */
 @media only screen and (min-width: 1200px) {
+    .container_full_width {
+        min-height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #header .header .brand {
         margin-left: 4%;
     }
