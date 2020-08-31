@@ -61,18 +61,18 @@ p {
     background-color: rgb(223, 11, 11);
 }
 
-.brand h1{
+.brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: whitesmoke;
 }
 
-.brand h1 span{
+.brand h1 span {
     color: crimson;
 }
 
 /* Header section */
-#header{
+#header {
     position: fixed;
     z-index: 4;
     left: 0;
@@ -81,13 +81,13 @@ p {
     height: auto;
 }
 
-#header .header{
+#header .header {
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.05);
-    transition: .5s ease background-color;
+    transition: 0.5s ease background-color;
 }
 
-#header .header .nav-bar{
+#header .header .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,11 +97,11 @@ p {
     padding: 0 10px;
 }
 
-#header .header .brand{
+#header .header .brand {
     margin-left: 1%;
 }
 
-#header .nav-list ul{
+#header .nav-list ul {
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
@@ -115,17 +115,17 @@ p {
     align-items: center;
     z-index: 1;
     overflow-x: hidden;
-    transition: .5s ease left;
+    transition: 0.5s ease left;
 }
 
-#header .nav-list ul.active{
+#header .nav-list ul.active {
     left: 0;
 }
 
-#header .nav-list ul a{
+#header .nav-list ul a {
     font-size: 2.5rem;
     font-weight: 500;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     text-decoration: none;
     text-transform: uppercase;
     color: whitesmoke;
@@ -133,7 +133,7 @@ p {
     display: block;
 }
 
-#header .nav-list ul a::after{
+#header .nav-list ul a::after {
     content: attr(data-after);
     position: absolute;
     top: 50%;
@@ -143,19 +143,19 @@ p {
     font-size: 11rem;
     letter-spacing: 50px;
     z-index: -1;
-    transition: .4s ease letter-spacing;
+    transition: 0.4s ease letter-spacing;
 }
 
-#header .nav-list ul li:hover a::after{
+#header .nav-list ul li:hover a::after {
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
 }
 
-#header .nav-list ul li:hover a{
+#header .nav-list ul li:hover a {
     color: crimson;
 }
 
-#header .hamburger{
+#header .hamburger {
     height: 60px;
     width: 60px;
     display: inline-block;
@@ -167,21 +167,21 @@ p {
     justify-content: center;
     z-index: 20;
     cursor: pointer;
-    transform: scale(.8);
+    transform: scale(0.8);
     margin-right: 15px;
 }
 
-#header .hamburger:after{
+#header .hamburger:after {
     position: absolute;
     content: '';
     height: 100%;
-    width: 100%  ;
+    width: 100%;
     border-radius: 50%;
     border: 3px solid whitesmoke;
     animation: hamburger_puls 1s ease infinite;
 }
 
-#header .hamburger .bar{
+#header .hamburger .bar {
     height: 2px;
     width: 30px;
     position: relative;
@@ -190,28 +190,28 @@ p {
 }
 
 #header .hamburger .bar::after,
-#header .hamburger .bar::before{
+#header .hamburger .bar::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     left: 0;
     background-color: whitesmoke;
-    transition: .3s ease;
+    transition: 0.3s ease;
     transition-property: top, bottom;
 }
 
-#header .hamburger .bar::after{
-    top: 8px
+#header .hamburger .bar::after {
+    top: 8px;
 }
-#header .hamburger .bar::before{
+#header .hamburger .bar::before {
     bottom: 8px;
 }
 
-#header .hamburger.active .bar::after{
+#header .hamburger.active .bar::after {
     top: 0;
 }
-#header .hamburger.active .bar::before{
+#header .hamburger.active .bar::before {
     bottom: 0;
 }
 /* End Header section */
@@ -295,11 +295,11 @@ p {
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
-#services .service-top{
+#services .service-top {
     max-width: 500px;
     margin: 0 auto;
 }
@@ -383,7 +383,7 @@ p {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 0 50px 0;
+    padding: 20px 0 20px 0;
 }
 
 #projects .projects-header h1 {
@@ -471,7 +471,7 @@ p {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 10px 20px;
 }
 
 #about .col-left {
@@ -519,66 +519,62 @@ p {
 }
 /* END About section */
 
-
-
 /* Contact section */
-#contact .contact{
+#contact .contact {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#contact .contact-items{
+#contact .contact-items {
     width: 400px;
 }
 
-#contact .contact-item{
+#contact .contact-item {
     width: 80%;
-    padding: 20px;
-    text-align: center;
     padding: 30px;
+    text-align: center;
     margin: 30px;
     justify-content: center;
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 18px 0 #0000002c;
     flex-direction: column;
-    transition: .7s ease box-shadow;
+    transition: 0.7s ease box-shadow;
 }
 
-#contact .contact-item:hover{
+#contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 #0000002c;
 }
 
-#contact .contact-info a{
+#contact .contact-info a {
     color: initial;
 }
 
-#contact .icon{
+#contact .icon {
     width: 60px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
 
-#contact .contact-info h1{
+#contact .contact-info h1 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 5px;
 }
 
-#contact .contact-info h2{
+#contact .contact-info h2 {
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 500;
 }
 /* END of Contact section */
 
-
 /* Footer */
-#footer{
+#footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
-#footer .footer{
+#footer .footer {
     min-height: 200px;
     flex-direction: column;
     padding-top: 15px;
@@ -586,58 +582,53 @@ p {
 }
 
 #footer h1,
-#footer h2{
+#footer h2 {
     text-align: center;
 }
 
-#footer h2{
+#footer h2 {
     color: whitesmoke;
     font-weight: 500;
     font-size: 1.8rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#footer .social-icon{
+#footer .social-icon {
     display: flex;
     margin-bottom: 30px;
     justify-content: center;
 }
 
-#footer .social-item{
+#footer .social-item {
     height: 50px;
     width: 50px;
     margin: 0 5px;
 }
 
-#footer .social-item img{
+#footer .social-item img {
     filter: grayscale(1);
-    transition: .5s ease filter;
+    transition: 0.5s ease filter;
 }
-#footer .social-item img:hover{
+#footer .social-item img:hover {
     filter: grayscale(0);
 }
 
-#footer p{
+#footer p {
     color: wheat;
     font-size: 1.3rem;
 }
 
-
-
-
-
-
 /* End of Footer */
 
 /* Keyframes */
-@keyframes hamburger_puls{
-    0%{
+@keyframes hamburger_puls {
+    0% {
         opacity: 1;
         transform: scale(1);
     }
-    100%{
+    100% {
         opacity: 0;
         transform: scale(1.4);
     }
@@ -669,32 +660,31 @@ p {
 /*END Keyframes */
 
 /*Media Query for TABLET */
-@media only screen and (min-width:768px){
-    .cta{
+@media only screen and (min-width: 768px) {
+    .cta {
         font-size: 2.5rem;
         padding: 20px 60px;
     }
-    h1.section-title{
+    h1.section-title {
         font-size: 6rem;
     }
     /* Hero */
-    #hero h1{
+    #hero h1 {
         font-size: 7rem;
     }
     /* End Hero */
 
     /* Service section */
 
-    #services .service-bottom .service-item{
+    #services .service-bottom .service-item {
         flex-basis: 45%;
         margin: 1.5%;
     }
     /* END Service section */
 
-
     /* Project */
-    
-    #projects .project-item{
+
+    #projects .project-item {
         flex-direction: row;
         height: 400px;
         margin: 0;
@@ -702,31 +692,31 @@ p {
         border-radius: 0;
     }
 
-    #projects .project-item:nth-child(even){
+    #projects .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
 
-    #projects .all-projects .project-info{
+    #projects .all-projects .project-info {
         height: 100%;
     }
-    #projects .all-projects .project-img{
+    #projects .all-projects .project-img {
         height: 100%;
     }
 
     /*  END Project */
 
     /* About */
-    #about .about{
+    #about .about {
         flex-direction: row;
     }
 
-    #about .col-left{
+    #about .col-left {
         width: 600px;
         height: 400px;
         padding-left: 60px;
     }
 
-    #about .about .col-left .about-img::after{
+    #about .about .col-left .about-img::after {
         left: -45px;
         top: 34px;
         height: 98%;
@@ -734,12 +724,12 @@ p {
         border: 10px solid crimson;
     }
 
-    #about .col-right{
+    #about .col-right {
         text-align: left;
         padding: 30px;
     }
 
-    #about .col-right h1{
+    #about .col-right h1 {
         text-align: left;
         font-size: 4rem;
     }
@@ -747,15 +737,15 @@ p {
     /* END About */
 
     /* Contact */
-    #contact .contact{
+    #contact .contact {
         flex-direction: column;
-        padding: 100px 0;
+        padding: 20px 0;
         align-items: center;
         justify-content: center;
         min-width: 20vh;
     }
 
-    #contact .contact-items{
+    #contact .contact-items {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -763,21 +753,21 @@ p {
         margin: 0;
     }
 
-    #contact .contact-item{
+    #contact .contact-item {
         margin: 20px;
         flex-direction: row;
     }
 
-    #contact .contact-item .icon{
+    #contact .contact-item .icon {
         height: 80px;
         width: 80px;
     }
 
-    #contact .contact-item .icon img{
+    #contact .contact-item .icon img {
         object-fit: contain;
     }
 
-    #contact .contact-item .contact-info{
+    #contact .contact-item .contact-info {
         width: 100%;
         text-align: center;
         padding-left: 20px;
@@ -787,16 +777,16 @@ p {
 /*END Media Query for TABLET */
 
 /* Media Query for DESKTOP */
-@media only screen and (min-width:1200px){
-    #header .header .brand{
+@media only screen and (min-width: 1200px) {
+    #header .header .brand {
         margin-left: 4%;
     }
 
-    #header .hamburger{
+    #header .hamburger {
         display: none;
     }
 
-    #header .nav-list ul{
+    #header .nav-list ul {
         position: initial;
         display: block;
         height: auto;
@@ -804,23 +794,21 @@ p {
         background-color: transparent;
     }
 
-    #header .nav-list ul li a{
+    #header .nav-list ul li a {
         font-size: 1.8rem;
     }
 
-    #header .nav-list ul li{
+    #header .nav-list ul li {
         display: inline-block;
     }
 
-    #header .nav-list ul a:after{
+    #header .nav-list ul a:after {
         display: none;
     }
 
-    #services .service-bottom .service-item{
+    #services .service-bottom .service-item {
         flex-basis: 22%;
         margin: 1.5%;
     }
 }
 /*END Media Query for DESKTOP */
-
-
